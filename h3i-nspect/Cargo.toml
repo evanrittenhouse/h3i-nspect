@@ -1,0 +1,13 @@
+[package]
+name = "h3i-nspect"
+authors = ["Evan Rittenhouse <evanrittenhouse@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+colored = "2"
+h3i = { workspace = true }
+tokio = { version = "1.42.0", features = ["full"] }
+pin-project-lite = "0.2.15"
+test-case = "3.3.1"

@@ -1,0 +1,14 @@
+[workspace]
+members = [ "h3i-nspect", "macros"]
+resolver = "2"
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+authors = ["Evan Rittenhouse (evanrittenhouse@gmail.com)"]
+
+[workspace.dependencies]
+# h3i = "0"
+# TODO: Use published version when target-frame gets merged
+# h3i = { git = "ssh://git@github.com/cloudflare/quiche.git", branch = "evanrittenhouse/target-frame" }
+h3i = { path = "../quiche/h3i" }

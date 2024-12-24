@@ -1,0 +1,16 @@
+[package]
+name = "macros"
+description = "Procedural macros used by h3i-nspect."
+edition = { workspace = true }
+version = { workspace = true }
+# repository
+
+[lib]
+proc-macro = true
+
+[dependencies]
+darling = "0.20.10"
+h3i = { workspace = true }
+proc-macro2 = { version = "1", default-features = false }
+quote = "1"
+syn = "2"
